@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-navy: #0B192C;
+    --brand-navy-deep: #060E18;
+    --brand-navy-light: #15263F;
+    --brand-orange: #FF6B00;
+    --brand-orange-glow: rgba(255, 107, 0, 0.25);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Subtle 3D Card Depth & Floating Effects */
+.card-3d-subtle {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px -10px rgba(11, 25, 44, 0.08), 0 4px 6px -2px rgba(11, 25, 44, 0.03);
+}
+
+.card-3d-subtle:hover {
+  transform: translateY(-4px) scale(1.008);
+  box-shadow: 0 20px 40px -15px rgba(11, 25, 44, 0.16), 0 8px 12px -3px rgba(255, 107, 0, 0.08);
+}
+
+/* Glassmorphic Navbar & Accents */
+.glass-nav {
+  background: rgba(11, 25, 44, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Deep Hero Gradient */
+.hero-gradient {
+  background: radial-gradient(circle at 80% 20%, #1a3254 0%, #0B192C 50%, #060E18 100%);
+}
+
+/* Glowing Accent Border */
+.orange-glow {
+  box-shadow: 0 0 25px rgba(255, 107, 0, 0.35);
+}
+
+/* Smooth Focus Rings */
+input:focus, select:focus, textarea:focus, button:focus-visible {
+  outline: 2px solid #FF6B00;
+  outline-offset: 2px;
+}
+
+/* Reduced Motion Respect */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
