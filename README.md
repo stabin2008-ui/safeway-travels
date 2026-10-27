@@ -12,7 +12,7 @@ Designed with a modern navy blue, crisp white, and vibrant orange aesthetic, rea
 - **Tagline:** 25 Years of Comfort & Trust
 - **Location Served:** Bengaluru, Karnataka, India
 - **Phone:** `9980838845` ([tel:9980838845](tel:9980838845))
-- **WhatsApp:** `+91 99808 38845` ([https://wa.me/919980838845](https://wa.me/919980838845))
+- **WhatsApp:** `+91 99808 38845` ([Instant Quote Chat](https://wa.me/919980838845?text=Hi%20Safeway%2C%20I%20would%20like%20to%20get%20an%20instant%20quote%20for%20car%2Fbus%20rental.))
 - **Email:** `ways63098@gmail.com` ([mailto:ways63098@gmail.com](mailto:ways63098@gmail.com))
 - **Pricing Policy:** *Price details available on request* (no hidden charges, no sudden surges).
 - **Payment Method:** Direct payment to chauffeur upon trip completion (no online payment or forced account creation required).
@@ -45,6 +45,7 @@ Designed with a modern navy blue, crisp white, and vibrant orange aesthetic, rea
    - Service Type & Vehicle selection.
    - Pickup & Drop location.
    - Travel Date & Time with past-date prevention validation.
+   - Formats pickup time in clear 12-hour AM/PM format (e.g. `10:00 AM`, `03:30 PM`, `12:00 AM`).
    - Generates a pre-filled, cleanly formatted WhatsApp booking request to `+91 99808 38845`.
    - Informative confirmation state stating that bookings are subject to confirmation by SafeWay Travels upon dispatch check.
    - Direct "Call Now" (`tel:9980838845`) fallback.

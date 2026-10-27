@@ -20,6 +20,7 @@ import { COMPANY } from "../config/company";
 import { VEHICLES } from "../config/vehicles";
 import type { Vehicle } from "../config/vehicles";
 import { SERVICES } from "../config/services";
+import { formatTimeTo12Hour } from "../utils/time";
 
 interface BookingFormProps {
   selectedVehicle?: Vehicle | null;
@@ -185,7 +186,7 @@ export const BookingForm: React.FC<BookingFormProps> = ({
         ? `🏁 *Drop Location:* ${formData.dropLocation.trim()}`
         : `🏁 *Drop Location:* As per itinerary (Local Ride)`,
       `📅 *Date:* ${formData.travelDate}`,
-      `⏰ *Pickup Time:* ${formData.travelTime}`,
+      `⏰ *Pickup Time:* ${formatTimeTo12Hour(formData.travelTime)}`,
       formData.specialRequests.trim()
         ? `📝 *Special Requests:* ${formData.specialRequests.trim()}`
         : null,
